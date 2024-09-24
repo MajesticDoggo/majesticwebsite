@@ -1,0 +1,79 @@
+@font-face {
+	font-family: "PlayfairDisplayRegular-ywLOY";
+	src: url("assets/customfonts/PlayfairDisplayRegular-ywLOY.tff") format("truetype");
+}
+<!--Font Size-->
+.mtitle {
+	font-size: 300%;
+}
+
+.intro {
+	font-size: 120%;
+}
+
+body {
+	background-color: rgb(0, 0, 0);
+	color: rgb(247, 247, 247); /* Optional: set text color to white for contrast */
+}
+
+html, body {
+	height: 100%; /* Ensure the body takes up the full viewport height */
+	margin: 0;
+}
+.intro {
+	font-family: "Arial";
+	font-style: normal;
+	font-weight: lighter;	
+}
+
+body {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    background-color: black;  /* Optional: background color */
+    color: white;             /* Optional: text color for contrast */
+    font-family: Arial, sans-serif; /* Optional: custom font */
+}
+
+.mtitle, .intro {
+	text-align: center;
+}
+
+.mtitle {
+		font-family: "PlayfairDisplayRegular-ywLOY";
+		font-style: italic;
+		font-weight: lighter;
+
+	}
+
+	footer {
+    text-align: center; /* Center text within the footer */
+    padding: 10px; /* Optional: add padding for spacing */
+}
+
+footer p {
+    margin: 0; /* Remove default margin if necessary */
+}
+
+/* Ensure the footer spans the full width */
+footer {
+    width: 100%;
+    position: absolute; /* or fixed if you want it always at the bottom */
+    bottom: 0;
+}
+footer {
+    text-align: center; /* Center text within the footer */
+    padding: 10px; /* Optional: add padding for spacing */
+}
+
+footer p {
+    margin: 0; /* Remove default margin if necessary */
+}
+
+/* Ensure the footer spans the full width */
+footer {
+    width: 100%;
+    position: absolute; /* or fixed if you want it always at the bottom */
+    bottom: 0;
+}
+	
