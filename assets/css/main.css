@@ -20,10 +20,13 @@ html, body {
 	height: 100%; /* Ensure the body takes up the full viewport height */
 	margin: 0;
 }
+
 .intro {
 	font-family: "Arial";
 	font-style: normal;
-	font-weight: lighter;	
+	font-weight: lighter;
+    
+    	
 }
 
 body {
@@ -35,18 +38,99 @@ body {
     font-family: Arial, sans-serif; /* Optional: custom font */
 }
 
-.mtitle, .intro {
+.intro{
 	text-align: center;
 }
 
-.mtitle {
-		font-family: "PlayfairDisplayRegular-ywLOY";
-		font-style: italic;
-		font-weight: lighter;
+.mtitle, .coming {
+	font-family: "PlayfairDisplayRegular-ywLOY";
+	font-style: italic;
+	font-weight: lighter;
 
-	}
+}
+.coming {
+    text-align: right; /* Align text to the right */
+    position: absolute; /* Position absolutely */
+    bottom: 1%; /* Position near the bottom */
+    padding-left: 45px; /* Adjust padding if needed */
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeInUp 1s forwards; /* Trigger animation */
+}
 
-	footer {
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; /* Start transparent */
+        transform: translateY(30px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+.dots {
+    display: inline-block; /* Make dots inline block */
+}
+
+.dot {
+    animation: loading 1s infinite; /* Apply loading animation */
+}
+
+h1, .intro {
+    transform: translateY(10px); /* Start slightly below */
+    animation: fadeInUp 1s forwards; /* Trigger animation */
+}
+.Facebook{
+    animation-play-state: 10s;
+    animation: facebook 2s forwards; /* Trigger animation */
+    
+}
+
+@keyframes facebook {
+    0%{
+        opacity: 0; /* Start invisible */
+    }
+    50%, 60% {
+        opacity: 0; /* Start invisible */
+    }
+    80%, 90% {
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        opacity: 1; /* Start invisible */
+    }
+
+}
+
+@keyframes loading {
+    0%, 20% {
+        opacity: 0; /* Start invisible */
+    }
+    30% {
+        opacity: 0; /* Fully visible */
+    }
+    50% {
+        opacity: 1; /* Fade out */
+    }
+    100% {
+        opacity: 0; /* Ensure it ends invisible */
+    }
+}
+
+/* Add a delay for each dot */
+.dot:nth-child(1) {
+    animation-delay: 0s; /* First dot appears first */
+}
+.dot:nth-child(2) {
+    animation-delay: 0.2s; /* Second dot appears with a slight delay */
+}
+.dot:nth-child(3) {
+    animation-delay: 0.4s; /* Third dot appears with a further delay */
+}
+
+
+footer {
     text-align: center; /* Center text within the footer */
     padding: 10px; /* Optional: add padding for spacing */
 }
@@ -60,20 +144,7 @@ footer {
     width: 100%;
     position: absolute; /* or fixed if you want it always at the bottom */
     bottom: 0;
-}
-footer {
-    text-align: center; /* Center text within the footer */
-    padding: 10px; /* Optional: add padding for spacing */
-}
-
-footer p {
-    margin: 0; /* Remove default margin if necessary */
-}
-
-/* Ensure the footer spans the full width */
-footer {
-    width: 100%;
-    position: absolute; /* or fixed if you want it always at the bottom */
-    bottom: 0;
+    text-align: center;
+    
 }
 	
